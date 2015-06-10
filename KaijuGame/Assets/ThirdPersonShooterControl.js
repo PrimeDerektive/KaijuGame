@@ -24,7 +24,8 @@ function Update () {
 	anim.SetFloat("direction", angleDifference);
 	
 	var currentState = anim.GetCurrentAnimatorStateInfo(0);
-	if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft") ||speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)	
+	var nextState = anim.GetNextAnimatorStateInfo(0);
+	if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft") || nextState.IsName("TurnRight") || nextState.IsName("TurnLeft") || speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)	
 		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*5.0);	
 		
 	aimPos = cam.position + cam.forward * 50.0;
@@ -32,6 +33,6 @@ function Update () {
 }
 
 function OnAnimatorIK(){
-	anim.SetLookAtWeight(1.0, 0.4, 0.75, 0.0, 0.5);
-	anim.SetLookAtPosition(aimPos);
+	anim.SetLookAtWeight(1.0, 0.5, 0.75, 0.0, 0.75);
+	anim.SetLookAtPosition(aimPos + transform.right * 25.0);
 }

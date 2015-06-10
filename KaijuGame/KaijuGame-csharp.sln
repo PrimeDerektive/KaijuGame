@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-firstpass-vs.csproj", "{38744D31-863D-46C0-AF41-F536746B454B}"
 EndProject
+Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-vs.csproj", "{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}"
+EndProject
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-Editor-vs.csproj", "{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{38744D31-863D-46C0-AF41-F536746B454B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38744D31-863D-46C0-AF41-F536746B454B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38744D31-863D-46C0-AF41-F536746B454B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-												GlobalSection(MonoDevelopProperties) = preSolution
+																											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
