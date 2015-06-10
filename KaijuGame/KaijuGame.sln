@@ -5,6 +5,8 @@ Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CShar
 EndProject
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-Editor.csproj", "{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}"
 EndProject
+Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-UnityScript.unityproj", "{698BDCBA-2868-F627-8E2C-06A4562CC1C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698BDCBA-2868-F627-8E2C-06A4562CC1C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698BDCBA-2868-F627-8E2C-06A4562CC1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698BDCBA-2868-F627-8E2C-06A4562CC1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698BDCBA-2868-F627-8E2C-06A4562CC1C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-		GlobalSection(MonoDevelopProperties) = preSolution
+											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
