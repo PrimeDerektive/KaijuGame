@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,13 +39,186 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\BipedIK\BipedIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\BipedIK\BipedIKSolvers.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\Constraint.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintPosition.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintPositionOffset.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintRotation.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintRotationOffset.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\Constraints.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\DoxygenManualFinalIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\AimIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\BipedIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\BipedIKSolversInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\CCDIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\ConstraintsInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\FABRIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\FABRIKRootInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\FullBodyBipedIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKEffectorInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverAimInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverFABRIKRootInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverFullBodyBipedInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverFullBodyInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverHeuristicInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverLimbInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverLookAtInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\IKSolverTrigonometricInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\InteractionTargetInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\InteractionTriggerInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\LimbIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\LookAtIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\RotationLimitAngleInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\RotationLimitHingeInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\RotationLimitInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\RotationLimitPolygonalInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\RotationLimitSplineInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Editor\TrigonometricIKInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\Grounder.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderBipedIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderFBBIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderQuadruped.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\Grounding.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GroundingLeg.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GroundingPelvis.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\AimIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\CCDIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FABRIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FABRIKRoot.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FullBodyBipedIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\IK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\LimbIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\LookAtIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\TrigonometricIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FABRIKChain.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FBBIKHeadEffector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FBIKChain.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKConstraintBend.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKEffector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMapping.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingBone.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingLimb.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingSpine.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolver.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverAim.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverCCD.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFABRIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFABRIKRoot.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFullBody.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFullBodyBiped.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverHeuristic.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverLimb.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverLookAt.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverTrigonometric.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\SolverManager.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionEffector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionLookAt.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionObject.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionSystem.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionTarget.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionTrigger.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\Poser.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimit.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitAngle.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitHinge.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitPolygonal.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitSpline.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\AimBoxing.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\CharacterControllerSimpleAim.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\SimpleAimingSystem.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\TerrainOffset.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Biped IK\Scripts\BipedIKvsAnimatorIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpider.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderController.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderLeg.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderParticles.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\Amplifier.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimationWarping.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimatorController3rdPerson.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimatorController3rdPersonIK.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\BodyTilt.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\CarryBoxDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\CharacterController3rdPerson.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\EffectorOffset.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ExplosionDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBBIKSettings.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBendGoal.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBoxing.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKHandsOnProp.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FPSAiming.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FPSCharacter.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReaction.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReactionCharacter.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HoldingHands.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\Inertia.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionC2CDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionSystemTestGUI.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\KissingRig.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorb.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorbCharacter.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\OffsetEffector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\OffsetModifier.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\OffsetPose.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PendulumExample.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUp2Handed.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUpBox.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUpSphere.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\Recoil.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\RecoilTest.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ResetInteractionObject.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ShoulderRotator.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\SoccerDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\TouchWalls.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\UserControlInteractions.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\CharacterAnimationSimpleLegacy.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\CharacterAnimationThirdPerson.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\GrounderDemo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\PlatformRotator.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Limb IK\Scripts\Limb IK Bend Goal\BendGoal.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Limb IK\Scripts\Limb IK Bend Goal\Editor\BendGoalInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Rotation Limits\Scripts\Turret.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\Aim Poser\AimPoser.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\Aim Poser\Editor\AimPoserInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CameraControllerFPS.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterAnimationBase.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterBase.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerBase.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerDefault.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerLegacy.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterThirdPerson.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\Editor\IKExecutionOrderInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\GenericPoser.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\HandPoser.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\IKExecutionOrder.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\SlowMo.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Shared\Scripts\UserControlThirdPerson.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\BipedLimbOrientations.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\BipedNaming.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\BipedReferences.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Comments.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Editor\BipedReferencesInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Editor\CommentsInspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Editor\Inspector.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Editor\SerializedContent.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Hierarchy.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Interp.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\QuaTools.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\TriggerEventBroadcaster.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\V3Tools.cs" />
+     <Compile Include="Assets\Plugins\RootMotion\Scripts\Warning.cs" />
      <Compile Include="Assets\Plugins\iTween\iTween.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
@@ -108,7 +281,7 @@
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

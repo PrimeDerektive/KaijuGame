@@ -32,7 +32,9 @@ function Update () {
 	
 }
 
+/*
 function OnAnimatorIK(){
 	anim.SetLookAtWeight(1.0, 0.5, 0.75, 0.0, 0.75);
 	anim.SetLookAtPosition(aimPos + transform.right * 25.0);
 }
+*/
