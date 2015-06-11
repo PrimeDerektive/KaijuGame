@@ -18,9 +18,11 @@ private var fireDownTime : float = 0.0;
 private var firing : boolean = false;
 
 private var aimTarget : Transform;
+private var camAnchor : GameObject;
 
 function Start(){
 	aimTarget = GameObject.FindGameObjectWithTag("AimTarget").transform;
+	camAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
 }
 
 function Update(){
@@ -36,7 +38,7 @@ function Update(){
 		muzzleFlashAudio.Stop();
 		var soundToPlay : AudioClip = falloffSound;
 		if(Time.time - fireDownTime < fireRate) soundToPlay = singleShotSound;
-		muzzleFlashAudio.PlayOneShot(soundToPlay, 0.75);
+		muzzleFlashAudio.PlayOneShot(soundToPlay);
 		muzzleFlash.SetActive(false);		
 		firing = false;
 	}
@@ -53,7 +55,16 @@ function Update(){
 			var newHitEffect : Transform = Transform.Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
 		}
 		
+		StartCoroutine(Shake());
+		
 		nextFire = Time.time + fireRate;
 	}
 	
+}
+
+function Shake(){
+	iTween.Stop(camAnchor);
+	yield;
+	camAnchor.transform.localPosition = Vector3.zero;
+	iTween.PunchRotation(camAnchor, Vector3(1.0, 0.25, 0.25), 0.3);
 }
