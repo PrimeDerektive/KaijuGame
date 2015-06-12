@@ -12,8 +12,9 @@ public class PickUp extends StateMachineBehaviour{
 	}
 	
 	public override function OnStateUpdate(animator : Animator, stateInfo : AnimatorStateInfo, layerIndex : int){
-		look.solver.bodyWeight = 1.0 - animator.GetFloat("rightHandIK");
-		ik.solver.rightHandEffector.positionWeight = animator.GetFloat("rightHandIK");
+		//look.solver.bodyWeight = 1.0 - animator.GetFloat("rightHandIK");
+		//ik.solver.rightHandEffector.positionWeight = animator.GetFloat("rightHandIK");
+		//ik.solver.rightHandEffector.rotationWeight = animator.GetFloat("rightHandIK");
 	}
 
 }

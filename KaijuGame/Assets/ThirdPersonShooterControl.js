@@ -1,6 +1,8 @@
 ﻿#pragma strict
 
 var dampTime : float = 0.2;
+var turnInPlaceSpeed : float = 5.0;
+var turnWhileMovingSpeed : float = 5.0;
 
 private var anim : Animator;
 private var cam : Transform;
@@ -25,8 +27,11 @@ function Update () {
 	
 	var currentState = anim.GetCurrentAnimatorStateInfo(0);
 	var nextState = anim.GetNextAnimatorStateInfo(0);
-	if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft") || nextState.IsName("TurnRight") || nextState.IsName("TurnLeft") || speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)	
-		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*5.0);	
+	
+	if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft") || nextState.IsName("TurnRight") || nextState.IsName("TurnLeft"))	
+		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*turnInPlaceSpeed);	
+	else if(speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)	
+		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*turnWhileMovingSpeed);	
 		
 	aimPos = cam.position + cam.forward * 50.0;
 	

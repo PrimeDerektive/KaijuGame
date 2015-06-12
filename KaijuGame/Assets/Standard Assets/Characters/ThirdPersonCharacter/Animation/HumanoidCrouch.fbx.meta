@@ -189,6 +189,7 @@ ModelImporter:
     7400010: HumanoidCrouchTurnRight
     7400012: HumanoidCrouchTurnLeft
     7400014: HumanoidCrouchWalkRightB
+    7400016: CrouchPickUp
     9500000: //RootNode
     13700000: Lw_Teeth_Mesh
     13700002: Tounge_Mesh
@@ -203,7 +204,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    pivotNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -404,6 +404,7 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -1145,3 +1146,4 @@ ModelImporter:
   additionalBone: 0
   userData: 
   assetBundleName: 
+  assetBundleVariant: 
