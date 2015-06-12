@@ -1,6 +1,7 @@
 ﻿#pragma strict
 import RootMotion.FinalIK;
 
+var target : Transform;
 var look : LookAtIK;
 var ik : FullBodyBipedIK;
 
@@ -10,6 +11,7 @@ function Start(){
 }
 
 function LateUpdate(){
-	ik.solver.Update();
 	look.solver.Update();
+	ik.solver.Update();
+	
 }

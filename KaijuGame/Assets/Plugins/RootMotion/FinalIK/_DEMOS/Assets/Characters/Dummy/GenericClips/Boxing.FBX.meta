@@ -125,6 +125,7 @@ ModelImporter:
     400118: PunchPin
     7400000: Take 001
     7400002: Boxing
+    9500000: //RootNode
     11100000: //RootNode
   materials:
     importMaterials: 1
@@ -234,9 +235,8 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: 
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ab846d93be6794935880f0918f60b63b,
-    type: 3}
+    rootMotionBoneName: BipDummy
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0
   userData: 
