@@ -1,17 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GiantFootsteps.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GiantPunchController.js">
     <Files>
+      <File FileName="Assets\CameraShakeManager.js" Line="20" Column="49" />
+      <File FileName="Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" Line="1" Column="1" />
+      <File FileName="Assets\GiantFootsteps.js" Line="41" Column="2" />
       <File FileName="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\AimBoxing.cs" Line="1" Column="1" />
-      <File FileName="Assets\AssaultRifle.js" Line="1" Column="1" />
+      <File FileName="Assets\AssaultRifle.js" Line="58" Column="3" />
       <File FileName="Assets\SimpleBullet.js" Line="1" Column="1" />
       <File FileName="Assets\PlaceAimTarget.js" Line="1" Column="1" />
-      <File FileName="Assets\GiantFootsteps.js" Line="16" Column="51" />
       <File FileName="Assets\SmoothAimTarget.js" Line="1" Column="1" />
       <File FileName="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReactionCharacter.cs" Line="1" Column="1" />
       <File FileName="Assets\StateMachineBehaviours\PickUp.js" Line="1" Column="1" />
-      <File FileName="Assets\ThirdPersonShooterControl.js" Line="21" Column="24" />
-      <File FileName="Assets\FootstepController.js" Line="25" Column="31" />
+      <File FileName="Assets\ThirdPersonShooterControl.js" Line="1" Column="1" />
+      <File FileName="Assets\GiantPunchController.js" Line="34" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

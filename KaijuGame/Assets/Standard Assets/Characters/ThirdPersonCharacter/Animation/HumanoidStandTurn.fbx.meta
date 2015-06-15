@@ -654,7 +654,7 @@ ModelImporter:
       name: StandQuarterTurnRight
       takeName: _97_TO_100_a_U1_M_P_idle_NeutralTO45IdleTONeutralIdle__Fb_p45_No_0_PJ_2
       firstFrame: 284
-      lastFrame: 350
+      lastFrame: 335
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -672,7 +672,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves:
-      - name: footsteps
+      - name: rightFootstep
         curve:
           serializedVersion: 2
           curve:
@@ -681,18 +681,49 @@ ModelImporter:
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - time: .248743594
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - time: .381909579
+          - time: .20905149
             value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - time: .55276376
+          - time: .282327861
             value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .340517104
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 2
+          postInfinity: 2
+      - name: leftFootstep
+        curve:
+          serializedVersion: 2
+          curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .721982718
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .780172586
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .82974118
+            value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
@@ -737,7 +768,7 @@ ModelImporter:
       name: StandQuarterTurnLeft
       takeName: _97_TO_100_a_U1_M_P_idle_NeutralTO45IdleTONeutralIdle__Fb_p45_No_0_PJ_2
       firstFrame: 284
-      lastFrame: 350
+      lastFrame: 335
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -755,7 +786,7 @@ ModelImporter:
       mirror: 1
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves:
-      - name: footsteps
+      - name: leftFootstep
         curve:
           serializedVersion: 2
           curve:
@@ -764,18 +795,49 @@ ModelImporter:
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - time: .253768742
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - time: .449748755
+          - time: .202586144
             value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - time: .62311542
+          - time: .271551907
             value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .349137753
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 2
+          postInfinity: 2
+      - name: rightFootstep
+        curve:
+          serializedVersion: 2
+          curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .646551609
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .719827414
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .784482598
+            value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0

@@ -18,11 +18,11 @@ private var fireDownTime : float = 0.0;
 private var firing : boolean = false;
 
 private var aimTarget : Transform;
-private var camAnchor : GameObject;
+private var cam : GameObject;
 
 function Start(){
 	aimTarget = GameObject.FindGameObjectWithTag("AimTarget").transform;
-	camAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
+	cam = Camera.main.gameObject;
 }
 
 function Update(){
@@ -55,16 +55,9 @@ function Update(){
 			var newHitEffect : Transform = Transform.Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
 		}
 		
-		StartCoroutine(Shake());
+		CameraShakeManager.instance.Shake(Vector3(1.25, 0.5, 0.5), 0.6);
 		
 		nextFire = Time.time + fireRate;
 	}
 	
-}
-
-function Shake(){
-	iTween.Stop(camAnchor);
-	yield;
-	camAnchor.transform.localPosition = Vector3.zero;
-	iTween.PunchRotation(camAnchor, Vector3(1.0, 0.25, 0.25), 0.3);
 }

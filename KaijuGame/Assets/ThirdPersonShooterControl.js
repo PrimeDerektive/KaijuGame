@@ -2,6 +2,7 @@
 
 var dampTime : float = 0.2;
 var turnInPlaceSpeed : float = 5.0;
+var turnInTurnTransition : boolean = true;
 var turnWhileMovingSpeed : float = 5.0;
 
 private var anim : Animator;
@@ -28,10 +29,14 @@ function Update () {
 	var currentState = anim.GetCurrentAnimatorStateInfo(0);
 	var nextState = anim.GetNextAnimatorStateInfo(0);
 	
-	if(currentState.IsName("TurnRight") || currentState.IsName("TurnLeft") || nextState.IsName("TurnRight") || nextState.IsName("TurnLeft"))	
-		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*turnInPlaceSpeed);	
-	else if(speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)	
-		transform.forward = Vector3.Lerp(transform.forward, targetDir, Time.deltaTime*turnWhileMovingSpeed);	
+	if(
+		currentState.IsName("TurnRight") ||
+		currentState.IsName("TurnLeft") || 
+		(turnInTurnTransition  && (nextState.IsName("TurnRight") || nextState.IsName("TurnLeft")))
+	)	
+		transform.eulerAngles.y = Mathf.LerpAngle(transform.eulerAngles.y, cam.eulerAngles.y, Time.deltaTime*turnInPlaceSpeed);
+	else if(speedX > 0.1 || speedY > 0.1 || speedX < -0.1 || speedY < -0.1)
+		transform.eulerAngles.y = Mathf.LerpAngle(transform.eulerAngles.y, cam.eulerAngles.y, Time.deltaTime*turnWhileMovingSpeed);
 		
 	aimPos = cam.position + cam.forward * 50.0;
 	
