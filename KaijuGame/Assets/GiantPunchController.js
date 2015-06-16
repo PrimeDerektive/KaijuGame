@@ -26,14 +26,15 @@ function Update () {
 		anim.SetTrigger("Fire1");
 	}
 	
+}
+
+function LateUpdate(){
+	
 	if(punching){
 		var hit : RaycastHit;
 		var dir = aimTarget.position - rightHand.position;
 		if(Physics.Raycast(rightHand.position, dir, hit, rayDistance, layerMask)){
 			var newHitEffect : Transform = Transform.Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-			CameraShakeManager.instance.Shake(Vector3(8.0, 8.0, 8.0), 1.5);
-			audioSource.pitch = Random.Range(0.8, 1.0);
-			audioSource.PlayOneShot(hitSound);		
 			punching = false;
 		}		
 	}
