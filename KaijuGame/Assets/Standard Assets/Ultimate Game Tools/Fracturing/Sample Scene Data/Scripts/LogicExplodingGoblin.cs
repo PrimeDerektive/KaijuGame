@@ -4,6 +4,7 @@ using System.Collections;
 public class LogicExplodingGoblin : MonoBehaviour
 {
     public float           ExplosionForce        = 4.0f;
+	public float			ExplosionRange = 50.0f;
     public FracturedObject TargetFracturedObject = null;
 
 	void OnGUI()
@@ -29,7 +30,7 @@ public class LogicExplodingGoblin : MonoBehaviour
 
         if(GUILayout.Button("Explode"))
         {
-            TargetFracturedObject.Explode(TargetFracturedObject.transform.position, ExplosionForce);
+			TargetFracturedObject.Explode(TargetFracturedObject.transform.position, ExplosionForce, ExplosionRange, true, true, false, false);
         }
 	}
 }
