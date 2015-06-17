@@ -36,6 +36,7 @@ function LateUpdate(){
 		if(Physics.Raycast(rightHand.position, dir, hit, rayDistance, layerMask)){
 			var newHitEffect : Transform = Transform.Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
 			punching = false;
+			hit.collider.gameObject.SendMessageUpwards("ExplodeBuilding", SendMessageOptions.DontRequireReceiver);
 		}		
 	}
 	
