@@ -50,27 +50,52 @@
      <Compile Include="Assets\SSAO Pro\Demo\Scripts\DemoUI.cs" />
      <Compile Include="Assets\SSAO Pro\Demo\Scripts\RotateAround.cs" />
      <Compile Include="Assets\SSAO Pro\Scripts\SSAOPro.cs" />
+     <None Include="Assets\ProCore\Prototype\About\changelog.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColor.shader" />
      <None Include="Assets\SSAO Pro\Readme.txt" />
+     <None Include="Assets\ProCore\Shared\About\README.txt" />
      <None Include="Assets\SSAO Pro\Resources\SSAOPro_v2.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_FaceHighlight.shader" />
      <None Include="Assets\MuzzleFlash\Shaders\DistortionParticlesCutout.shader" />
      <None Include="Assets\Standard Assets\Ultimate Game Tools\Fracturing\!Readme - v1.13.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitSolidColor.shader" />
      <None Include="Assets\SSAO Pro\Resources\SSAOPro_v1.shader" />
      <None Include="Assets\MuzzleFlash\Shaders\GlowAdditiveTwoColor.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseTextureBlend.shader" />
      <None Include="Assets\SSAO Pro\Changelog.txt" />
      <None Include="Assets\SSAO Pro\Resources\SSAOPro.cginc" />
      <None Include="Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
      <None Include="Assets\MuzzleFlash\Readme.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_UnlitVertexColor.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\ProCore\Prototype\About\pc_AboutEntry_ProBuilder.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_VertexShader.shader" />
      <None Include="Assets\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
+     <None Include="Assets\ProCore\_README_PROTOTYPE.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Ultimate Game Tools\MeshCombiner\!Readme - v1.02.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\SSAO Pro\Resources\HighPrecisionDepthMap.shader" />
+     <None Include="Assets\ProCore\Prototype\About\Credits.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="ProCore">
+ <HintPath>C:/Users/dtrave/Documents/GitHub/KaijuGame/KaijuGame/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps-Unity5">
+ <HintPath>C:/Users/dtrave/Documents/GitHub/KaijuGame/KaijuGame/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore-Unity5">
+ <HintPath>C:/Users/dtrave/Documents/GitHub/KaijuGame/KaijuGame/Assets/ProCore/Prototype/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="pb_Profiler">
+ <HintPath>C:/Users/dtrave/Documents/GitHub/KaijuGame/KaijuGame/Assets/ProCore/Shared/pb_Profiler/pb_Profiler.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
