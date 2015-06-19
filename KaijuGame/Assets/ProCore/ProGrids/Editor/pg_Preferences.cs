@@ -9,6 +9,7 @@ public class pg_Preferences {
 	static Color _gridColorY;
 	static Color _gridColorZ;
 	static float _alphaBump;
+	static bool _scaleSnapEnabled;
 	static int _snapMethod;
 	static float _BracketIncreaseValue;
 	static pg_Editor.SnapUnit _GridUnits;
@@ -57,6 +58,8 @@ public class pg_Preferences {
 
 		_GridUnits = (pg_Editor.SnapUnit)EditorGUILayout.EnumPopup("Grid Units", _GridUnits);
 
+		_scaleSnapEnabled = EditorGUILayout.Toggle("Snap On Scale", _scaleSnapEnabled);
+
 		// GUILayout.BeginHorizontal();
 		// EditorGUILayout.PrefixLabel(new GUIContent("Axis Constraints", "If toggled, objects will be automatically grid aligned on all axes when moving."));
 
@@ -76,6 +79,7 @@ public class pg_Preferences {
 
 	public static bool LoadPreferences()
 	{
+		_scaleSnapEnabled = EditorPrefs.HasKey("scaleSnapEnabled") ? EditorPrefs.GetBool("scaleSnapEnabled") : false;
 		_gridColorX = (EditorPrefs.HasKey("gridColorX")) ? pg_Util.ColorWithString(EditorPrefs.GetString("gridColorX")) : GRID_COLOR_X;
 		_gridColorY = (EditorPrefs.HasKey("gridColorY")) ? pg_Util.ColorWithString(EditorPrefs.GetString("gridColorY")) : GRID_COLOR_Y;
 		_gridColorZ = (EditorPrefs.HasKey("gridColorZ")) ? pg_Util.ColorWithString(EditorPrefs.GetString("gridColorZ")) : GRID_COLOR_Z;
@@ -91,6 +95,7 @@ public class pg_Preferences {
 
 	public static void SetPreferences()
 	{
+		EditorPrefs.SetBool("scaleSnapEnabled", _scaleSnapEnabled);
 		EditorPrefs.SetString("gridColorX", _gridColorX.ToString("f3"));
 		EditorPrefs.SetString("gridColorY", _gridColorY.ToString("f3"));
 		EditorPrefs.SetString("gridColorZ", _gridColorZ.ToString("f3"));
@@ -105,6 +110,7 @@ public class pg_Preferences {
 
 	public static void ResetPrefs()
 	{
+		EditorPrefs.DeleteKey("scaleSnapEnabled");
 		EditorPrefs.DeleteKey("gridColorX");
 		EditorPrefs.DeleteKey("gridColorY");
 		EditorPrefs.DeleteKey("gridColorZ");

@@ -1,3 +1,8 @@
+-- ProGrids 2.1.7f0 -
+
+# Features
+	- Add preference to enabled snapping scale values.
+
 -- ProGrids 2.1.6p2 -
 
 # Features

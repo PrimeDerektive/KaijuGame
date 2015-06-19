@@ -39,6 +39,7 @@ public class pg_Editor : EditorWindow
 
 	public bool fullGrid { get; private set; }
 
+	private bool scaleSnapEnabled = false;
 	bool lockGrid = false;
 	private Axis renderPlane = Axis.Y;
 #endregion
@@ -92,6 +93,7 @@ public class pg_Editor : EditorWindow
 #endregion
 
 #region PREFERENCES
+	
 	/** Settings **/
 	public Color gridColorX, gridColorY, gridColorZ;
 	public Color gridColorX_primary, gridColorY_primary, gridColorZ_primary;
@@ -163,6 +165,8 @@ NoParseForYou:
 		gridColorZ_primary = new Color(gridColorZ.r, gridColorZ.g, gridColorZ.b, gridColorZ.a + alphaBump);
 
 		drawGrid = (EditorPrefs.HasKey("showgrid")) ? EditorPrefs.GetBool("showgrid") : pg_Preferences.SHOW_GRID;
+
+		scaleSnapEnabled = EditorPrefs.HasKey("scaleSnapEnabled") ? EditorPrefs.GetBool("scaleSnapEnabled") : false;
 	}
 
 	private GUISkin sixBySevenSkin;
@@ -606,6 +610,8 @@ NoParseForYou:
 	private bool toggleAxisConstraint = false;
 	private bool toggleTempSnap = false;
 	private Vector3 lastPosition = Vector3.zero;
+	// private Vector3 lastRotation = Vector3.zero;
+	private Vector3 lastScale = Vector3.one;
 	private Vector3 pivot = Vector3.zero, lastPivot = Vector3.zero;
 	private Vector3 camDir = Vector3.zero, prevCamDir = Vector3.zero;
 	private float lastDistance = 0f;	///< Distance from camera to pivot at the last time the grid mesh was updated.
@@ -780,7 +786,10 @@ NoParseForYou:
 			if(Selection.activeTransform)
 			{
 				lastTransform = Selection.activeTransform;
+
 				lastPosition = Selection.activeTransform.position;
+				// lastRotation = Selection.activeTransform.localRotation.eulerAngles;
+				lastScale = Selection.activeTransform.localScale;
 			}
 		}
 
@@ -816,6 +825,20 @@ NoParseForYou:
 				}
 
 				lastPosition = selected.position;
+			}
+
+			if( !FuzzyEquals(lastTransform.localScale, lastScale) && scaleSnapEnabled )
+			{
+				if( !toggleTempSnap )
+				{
+					Vector3 old = lastTransform.localScale;
+					Vector3 mask = old - lastScale;
+
+					foreach(Transform t in Selection.transforms)
+						t.localScale = pg_Util.SnapValue(t.localScale, mask, snapValue);
+
+					lastScale = lastTransform.localScale;
+				}
 			}
 		}
 	}
