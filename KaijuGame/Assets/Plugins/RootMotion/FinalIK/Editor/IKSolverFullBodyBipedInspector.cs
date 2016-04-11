@@ -304,7 +304,7 @@ namespace RootMotion.FinalIK {
 
 		private static Texture2D endEffectorIcon {
 			get {
-				if (_endEffectorIcon == null) _endEffectorIcon = (Texture2D)Resources.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/EndEffector Icon.png", typeof(Texture2D));
+				if (_endEffectorIcon == null) _endEffectorIcon = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/EndEffector Icon.png", typeof(Texture2D));
 				return _endEffectorIcon;
 			}
 		}
@@ -312,7 +312,7 @@ namespace RootMotion.FinalIK {
 		
 		private static Texture2D startEffectorIcon {
 			get {
-				if (_startEffectorIcon == null) _startEffectorIcon = (Texture2D)Resources.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/MidEffector Icon.png", typeof(Texture2D));
+				if (_startEffectorIcon == null) _startEffectorIcon = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/MidEffector Icon.png", typeof(Texture2D));
 				return _startEffectorIcon;
 			}
 		}
@@ -320,7 +320,7 @@ namespace RootMotion.FinalIK {
 		
 		private static Texture2D chainIcon {
 			get {
-				if (_chainIcon == null) _chainIcon = (Texture2D)Resources.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/Chain Icon.png", typeof(Texture2D));
+				if (_chainIcon == null) _chainIcon = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/Chain Icon.png", typeof(Texture2D));
 				return _chainIcon;
 			}
 		}
@@ -328,7 +328,7 @@ namespace RootMotion.FinalIK {
 		
 		private static Texture2D mappingIcon {
 			get {
-				if (_mappingIcon == null) _mappingIcon = (Texture2D)Resources.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/Mapping Icon.png", typeof(Texture2D));
+				if (_mappingIcon == null) _mappingIcon = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/RootMotion/FinalIK/Gizmos/Mapping Icon.png", typeof(Texture2D));
 				return _mappingIcon;
 			}
 		}

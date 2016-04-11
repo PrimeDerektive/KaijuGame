@@ -5,6 +5,8 @@ Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CShar
 EndProject
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp.csproj", "{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}"
 EndProject
+Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-Editor-firstpass.csproj", "{F3368D75-6A72-A05B-7743-7060C3AC7952}"
+EndProject
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-CSharp-Editor.csproj", "{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}"
 EndProject
 Project("{C6467928-C965-DA41-834E-6587E3C6120E}") = "KaijuGame", "Assembly-UnityScript.unityproj", "{698BDCBA-2868-F627-8E2C-06A4562CC1C8}"
@@ -23,6 +25,10 @@ Global
 		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31F1E5A9-776A-9F3B-7441-E73D3ED1CC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3368D75-6A72-A05B-7743-7060C3AC7952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3368D75-6A72-A05B-7743-7060C3AC7952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3368D75-6A72-A05B-7743-7060C3AC7952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3368D75-6A72-A05B-7743-7060C3AC7952}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF77C5A-81BC-534B-22E9-3DE75ACB5B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																																																		GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																																																																																									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -54,5 +60,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
